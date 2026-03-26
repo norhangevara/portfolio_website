@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Playground — Norhan Gevara</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body { overflow: hidden; height: 100vh; }
+    #carousel-page { height: 100vh; }
+    .carousel-item { width: 100%; min-height: 160px; }
+  </style>
+</head>
+<body>
+
+<div id="page-loader"><span id="loader-number">100</span></div>
+
+<header id="site-header">
+  <div class="header-meta">
+    <span class="dot"></span>
+    <span>Cairo, EG</span>
+    <span data-live-clock>--:-- -- GMT+2</span>
+    <span>30.0444° N, 31.2357° E</span>
+  </div>
+  <nav class="header-nav">
+    <a href="index.html"      class="nav-link"><span>Home</span><span class="nav-clone">Home</span></a>
+    <a href="works.html"      class="nav-link"><span>Works</span><span class="nav-clone">Works</span></a>
+    <a href="playground.html" class="nav-link active"><span>Playground</span><span class="nav-clone">Playground</span></a>
+    <a href="about.html"      class="nav-link"><span>About</span><span class="nav-clone">About</span></a>
+  </nav>
+</header>
+
+<div id="carousel-page">
+  <div class="carousel-body">
+
+    <!-- Left label -->
+    <div class="carousel-left">
+      <span class="carousel-page-label">PLAY<br>GROUND</span>
+    </div>
+
+    <!-- Center strip -->
+    <div class="carousel-center">
+      <div class="carousel-project-title" id="carousel-title" style="transition: opacity 0.2s ease;">Type Study 01</div>
+      <div class="carousel-strip" id="carousel-strip">
+
+        <div class="carousel-item active" data-title="Type Study 01">
+          <span class="corner-tr"></span><span class="corner-bl"></span>
+          <div class="carousel-item-placeholder">
+            <span>Typography Exploration  ·  2025</span>
+          </div>
+        </div>
+
+        <div class="carousel-item adjacent" data-title="Grid Experiment">
+          <span class="corner-tr"></span><span class="corner-bl"></span>
+          <div class="carousel-item-placeholder" style="background:linear-gradient(135deg,rgba(56,30,18,0.5),rgba(100,80,60,0.6))">
+            <span>Layout &amp; Structure  ·  2025</span>
+          </div>
+        </div>
+
+        <div class="carousel-item adjacent" data-title="Identity Sketch">
+          <span class="corner-tr"></span><span class="corner-bl"></span>
+          <div class="carousel-item-placeholder" style="background:linear-gradient(135deg,rgba(176,91,59,0.35),rgba(140,115,85,0.5))">
+            <span>Brand Sketch  ·  2025</span>
+          </div>
+        </div>
+
+        <div class="carousel-item hidden" data-title="Colour System">
+          <span class="corner-tr"></span><span class="corner-bl"></span>
+          <div class="carousel-item-placeholder" style="background:linear-gradient(135deg,rgba(100,80,60,0.5),rgba(56,30,18,0.7))">
+            <span>Palette Exploration  ·  2025</span>
+          </div>
+        </div>
+
+        <div class="carousel-item hidden" data-title="Motion Test">
+          <span class="corner-tr"></span><span class="corner-bl"></span>
+          <div class="carousel-item-placeholder" style="background:linear-gradient(135deg,rgba(13,13,13,0.8),rgba(176,91,59,0.4))">
+            <span>Motion Study  ·  2026</span>
+          </div>
+        </div>
+
+        <div class="carousel-item hidden" data-title="Archive Fragment">
+          <span class="corner-tr"></span><span class="corner-bl"></span>
+          <div class="carousel-item-placeholder" style="background:linear-gradient(135deg,rgba(140,115,85,0.4),rgba(13,13,13,0.7))">
+            <span>Personal Archive  ·  2026</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="carousel-pagination" id="carousel-pagination"></div>
+      <div class="carousel-counter" id="carousel-counter">1/6</div>
+    </div>
+
+    <!-- Right list -->
+    <div class="carousel-right" id="carousel-right-list"></div>
+
+  </div>
+</div>
+
+<button class="carousel-nav-prev" id="carousel-prev">PREV</button>
+<button class="carousel-nav-next" id="carousel-next">NEXT</button>
+
+<div class="carousel-status-bar">
+  <span class="carousel-timer" id="carousel-timer">00:00:00</span>
+  <span class="carousel-playing">PLAYING</span>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
