@@ -20,113 +20,67 @@
     <span class="dot"></span>
     <span>Cairo, EG</span>
     <span data-live-clock>--:-- --  GMT+2</span>
-    <span>30.0444° N, 31.2357° E</span>
+    <span class="header-coords">30.0444° N, 31.2357° E</span>
   </div>
   <nav class="header-nav">
-    <a href="index.html"    class="nav-link active"><span>Home</span><span class="nav-clone">Home</span></a>
-    <a href="works.html"    class="nav-link"><span>Works</span><span class="nav-clone">Works</span></a>
+    <a href="index.html"      class="nav-link active"><span>Home</span><span class="nav-clone">Home</span></a>
+    <a href="works.html"      class="nav-link"><span>Works</span><span class="nav-clone">Works</span></a>
     <a href="playground.html" class="nav-link"><span>Playground</span><span class="nav-clone">Playground</span></a>
-    <a href="about.html"    class="nav-link"><span>About</span><span class="nav-clone">About</span></a>
+    <a href="about.html"      class="nav-link"><span>About</span><span class="nav-clone">About</span></a>
   </nav>
 </header>
 
 <!-- ══════════════════════════════════════════
-     HERO
+     HERO — scroll-pinned expand
 ═══════════════════════════════════════════ -->
-<section id="hero">
-  <div class="hero-title-wrap">
-    <span class="hero-title">NORHAN GEVARA</span>
-  </div>
+<div id="hero-scroll-container">
 
-  <div class="hero-middle">
-    <span class="hero-subtitle-left">A BRAND</span>
+  <!-- Sticky hero stage -->
+  <section id="hero">
 
-    <!-- Featured Project Card -->
-    <div class="hero-card">
-      <div class="hero-card-meta">
-        <span id="hero-card-cat">Brand Identity</span>
-        <span id="hero-card-year">2025</span>
-      </div>
-      <div class="hero-card-img">
-        <div class="hero-card-placeholder" id="hero-card-ph">FEATURED PROJECT</div>
-      </div>
+    <!-- Name: letter-mask hover — visible before/during scroll -->
+    <div class="hero-name-wrap" id="hero-name-wrap">
+      <h1 class="hero-name" id="hero-name">
+        <!-- Letters injected by JS -->
+      </h1>
     </div>
 
-    <span class="hero-subtitle-right">DESIGNER</span>
-  </div>
+    <!-- Middle row: A BRAND · video card · DESIGNER -->
+    <div class="hero-middle-row" id="hero-middle-row">
+      <span class="hero-side hero-side-left" id="hero-side-left">A BRAND</span>
 
-  <div class="scroll-down">SCROLL DOWN</div>
-</section>
-
-<!-- ══════════════════════════════════════════
-     MARQUEE
-═══════════════════════════════════════════ -->
-<div class="marquee-section">
-  <div class="marquee-track">
-    <span class="marquee-item">INTENTIONAL</span>
-    <span class="marquee-item lowercase">Brand</span>
-    <span class="marquee-divider">·</span>
-    <span class="marquee-item">SYSTEMS</span>
-    <span class="marquee-item lowercase">Thinking</span>
-    <span class="marquee-divider">·</span>
-    <span class="marquee-item">Identity</span>
-    <span class="marquee-item lowercase">through</span>
-    <span class="marquee-divider">·</span>
-    <span class="marquee-item">DIRECTION</span>
-    <span class="marquee-divider">·</span>
-    <span class="marquee-item">WITH PURPOSE</span>
-    <span class="marquee-divider">·</span>
-    <!-- Duplicate for seamless loop -->
-    <span class="marquee-item">INTENTIONAL</span>
-    <span class="marquee-item lowercase">Brand</span>
-    <span class="marquee-divider">·</span>
-    <span class="marquee-item">SYSTEMS</span>
-    <span class="marquee-item lowercase">Thinking</span>
-    <span class="marquee-divider">·</span>
-    <span class="marquee-item">Identity</span>
-    <span class="marquee-item lowercase">through</span>
-    <span class="marquee-divider">·</span>
-    <span class="marquee-item">DIRECTION</span>
-    <span class="marquee-divider">·</span>
-    <span class="marquee-item">WITH PURPOSE</span>
-    <span class="marquee-divider">·</span>
-  </div>
-</div>
-
-<!-- ══════════════════════════════════════════
-     SPOTLIGHT — Featured Project (dark)
-═══════════════════════════════════════════ -->
-<section id="spotlight">
-  <div class="spotlight-inner">
-    <div class="spotlight-image fade-up" data-delay="0.1">
-      <div class="spotlight-placeholder">
-        <span style="font-size:14px; letter-spacing:0.08em;">PROJECT IMAGE</span>
-        <span style="font-size:11px; opacity:0.5;">Replace with your hero project visual</span>
+      <div class="hero-video-card" id="hero-video-card">
+        <div class="hero-video-inner">
+          <!-- Replace src with your actual showreel video -->
+          <div class="hero-video-placeholder">
+            <span class="hvp-label">SHOWREEL</span>
+            <span class="hvp-sub">Add your video here</span>
+          </div>
+          <!-- <video autoplay muted loop playsinline src="showreel.mp4"></video> -->
+        </div>
       </div>
+
+      <span class="hero-side hero-side-right" id="hero-side-right">DESIGNER</span>
     </div>
-    <div class="spotlight-text">
-      <p class="spotlight-eyebrow fade-up" data-delay="0.15">Featured Work  ·  2025</p>
-      <h2 class="spotlight-title fade-up" data-delay="0.2">FEATURED<br>PROJECT<br>TITLE</h2>
-      <div class="spotlight-tags fade-up" data-delay="0.25">
-        <span class="pill pill-light">Brand Identity</span>
-        <span class="pill pill-light">Art Direction</span>
-        <span class="pill pill-light">Strategy</span>
-      </div>
+
+    <!-- Scroll cue -->
+    <div class="scroll-cue" id="scroll-cue">
+      <span class="scroll-cue-text">SCROLL</span>
+      <span class="scroll-cue-line"></span>
     </div>
-  </div>
-</section>
+
+  </section>
+</div><!-- /hero-scroll-container -->
 
 <!-- ══════════════════════════════════════════
-     MANIFESTO — Brand Direction Statement
+     FULL-SCREEN VIDEO / SHOWREEL SECTION
 ═══════════════════════════════════════════ -->
-<section id="manifesto">
-  <div class="manifesto-lines">
-    <span class="manifesto-line"><span class="manifesto-line-inner reveal-clip" data-delay="0">INTENTIONAL</span></span>
-    <span class="manifesto-line mixed"><span class="manifesto-line-inner reveal-clip" data-delay="0.08">Brand</span></span>
-    <span class="manifesto-line"><span class="manifesto-line-inner reveal-clip" data-delay="0.16">SYSTEMS</span></span>
-    <span class="manifesto-line mixed"><span class="manifesto-line-inner reveal-clip" data-delay="0.24">Identity through</span></span>
-    <span class="manifesto-line"><span class="manifesto-line-inner reveal-clip" data-delay="0.32">DIRECTION</span></span>
-    <span class="manifesto-line mixed"><span class="manifesto-line-inner reveal-clip" data-delay="0.4">With Purpose</span></span>
+<section id="full-video-section">
+  <div class="full-video-inner">
+    <div class="full-video-placeholder">
+      <span class="fvp-label">SHOWREEL</span>
+    </div>
+    <!-- <video autoplay muted loop playsinline src="showreel-full.mp4"></video> -->
   </div>
 </section>
 
@@ -134,8 +88,15 @@
      FEATURED WORKS
 ═══════════════════════════════════════════ -->
 <section id="featured-works">
-  <h2 class="section-title-bleed">FEATURED&nbsp;&nbsp;WORKS</h2>
-  <div class="section-meta-row">
+
+  <!-- Letter-by-letter title -->
+  <div class="letter-title-wrap" data-letters="FEATURED WORKS">
+    <h2 class="letter-title" id="featured-title">
+      <!-- Letters injected by JS -->
+    </h2>
+  </div>
+
+  <div class="section-meta-row fade-up" data-delay="0.1">
     <span class="section-label">Selected Projects</span>
     <div class="section-tags">
       <span class="pill pill-dark">Strategic</span>
@@ -145,101 +106,139 @@
   </div>
 
   <div class="works-grid">
-    <!-- Card 1 -->
-    <a href="project.html" class="card fade-up" data-delay="0">
-      <div class="card-placeholder">
-        <span class="card-placeholder-text">PROJECT 01</span>
+    <!-- Wide card -->
+    <a href="project.html" class="card card-wide fade-up" data-delay="0.05">
+      <div class="card-img-wrap">
+        <div class="card-placeholder">
+          <span class="card-placeholder-text">PROJECT 01</span>
+        </div>
       </div>
       <div class="card-info">
-        <div class="card-title">Project 01</div>
+        <div class="card-left">
+          <div class="card-num">01</div>
+          <div class="card-title">Project 01</div>
+        </div>
         <div class="card-tags">
-          <span class="pill pill-light" style="font-size:10px; padding:3px 10px;">Brand Identity</span>
-          <span class="pill pill-light" style="font-size:10px; padding:3px 10px;">Strategy</span>
+          <span class="pill pill-light">Brand Identity</span>
+          <span class="pill pill-light">Strategy</span>
         </div>
       </div>
     </a>
 
-    <!-- Card 2 -->
+    <!-- Grid row: 2 cards -->
     <a href="project.html" class="card fade-up" data-delay="0.1">
-      <div class="card-placeholder" style="background: linear-gradient(135deg, rgba(56,30,18,0.7), rgba(100,80,60,0.8))">
-        <span class="card-placeholder-text">PROJECT 02</span>
+      <div class="card-img-wrap">
+        <div class="card-placeholder" style="background:linear-gradient(135deg,rgba(56,30,18,0.7),rgba(100,80,60,0.8))">
+          <span class="card-placeholder-text">PROJECT 02</span>
+        </div>
       </div>
       <div class="card-info">
-        <div class="card-title">Project 02</div>
+        <div class="card-left">
+          <div class="card-num">02</div>
+          <div class="card-title">Project 02</div>
+        </div>
         <div class="card-tags">
-          <span class="pill pill-light" style="font-size:10px; padding:3px 10px;">Art Direction</span>
-          <span class="pill pill-light" style="font-size:10px; padding:3px 10px;">Design</span>
+          <span class="pill pill-light">Art Direction</span>
         </div>
       </div>
     </a>
 
-    <!-- Card 3 -->
     <a href="project.html" class="card fade-up" data-delay="0.15">
-      <div class="card-placeholder" style="background: linear-gradient(135deg, rgba(140,115,85,0.5), rgba(176,91,59,0.6))">
-        <span class="card-placeholder-text">PROJECT 03</span>
+      <div class="card-img-wrap">
+        <div class="card-placeholder" style="background:linear-gradient(135deg,rgba(140,115,85,0.5),rgba(176,91,59,0.6))">
+          <span class="card-placeholder-text">PROJECT 03</span>
+        </div>
       </div>
       <div class="card-info">
-        <div class="card-title">Project 03</div>
+        <div class="card-left">
+          <div class="card-num">03</div>
+          <div class="card-title">Project 03</div>
+        </div>
         <div class="card-tags">
-          <span class="pill pill-light" style="font-size:10px; padding:3px 10px;">Visual Systems</span>
+          <span class="pill pill-light">Visual Systems</span>
         </div>
       </div>
     </a>
 
-    <!-- Card 4 -->
-    <a href="project.html" class="card fade-up" data-delay="0.2">
-      <div class="card-placeholder" style="background: linear-gradient(135deg, rgba(13,13,13,0.9), rgba(56,30,18,0.9))">
-        <span class="card-placeholder-text">PROJECT 04</span>
+    <!-- Second wide card -->
+    <a href="project.html" class="card card-wide fade-up" data-delay="0.2">
+      <div class="card-img-wrap">
+        <div class="card-placeholder" style="background:linear-gradient(135deg,rgba(13,13,13,0.9),rgba(56,30,18,0.9))">
+          <span class="card-placeholder-text">PROJECT 04</span>
+        </div>
       </div>
       <div class="card-info">
-        <div class="card-title">Project 04</div>
+        <div class="card-left">
+          <div class="card-num">04</div>
+          <div class="card-title">Project 04</div>
+        </div>
         <div class="card-tags">
-          <span class="pill pill-light" style="font-size:10px; padding:3px 10px;">Typography</span>
-          <span class="pill pill-light" style="font-size:10px; padding:3px 10px;">Concept</span>
+          <span class="pill pill-light">Typography</span>
+          <span class="pill pill-light">Concept</span>
         </div>
       </div>
     </a>
   </div>
 
-  <div class="cta-wrap">
+  <div class="cta-wrap fade-up" data-delay="0.25">
     <a href="works.html" class="btn-pill">See All Work</a>
   </div>
 </section>
 
 <!-- ══════════════════════════════════════════
-     PLAYGROUND PREVIEW (dark)
+     PLAYGROUND SECTION (dark)
 ═══════════════════════════════════════════ -->
 <section id="playground-preview">
-  <h2 class="section-title-bleed-light">PLAYGROUND</h2>
-  <div class="playground-meta-row">
-    <span class="section-label">Short, Self-Initiated Work</span>
+
+  <!-- Letter-by-letter title -->
+  <div class="letter-title-wrap letter-title-light" data-letters="PLAYGROUND">
+    <h2 class="letter-title" id="playground-title">
+      <!-- Letters injected by JS -->
+    </h2>
+  </div>
+
+  <div class="playground-meta-row fade-up" data-delay="0.05">
+    <span class="section-label" style="color:rgba(240,237,228,0.5);">Self-Initiated Work</span>
     <span class="pill pill-light">Experiments &amp; Sketches</span>
   </div>
 
-  <ul class="playground-list">
-    <li class="playground-item fade-up" data-delay="0">
-      <span class="playground-num">01</span>
-      <span class="playground-name">TYPE STUDY 01</span>
+  <!-- Mouse-follow image (hidden until hover) -->
+  <div class="pg-hover-image" id="pg-hover-image">
+    <div class="pg-hover-img-inner">
+      <!-- Replace src with actual images per item -->
+      <div class="pg-img-placeholder" id="pg-img-placeholder">IMG</div>
+    </div>
+  </div>
+
+  <ul class="playground-list" id="playground-list">
+    <li class="playground-item fade-up" data-delay="0" data-pg-img="">
+      <span class="pg-num">01</span>
+      <span class="pg-name">TYPE STUDY 01</span>
+      <span class="pg-arrow">↗</span>
     </li>
-    <li class="playground-item fade-up" data-delay="0.07">
-      <span class="playground-num">02</span>
-      <span class="playground-name">GRID EXPERIMENT</span>
+    <li class="playground-item fade-up" data-delay="0.06" data-pg-img="">
+      <span class="pg-num">02</span>
+      <span class="pg-name">GRID EXPERIMENT</span>
+      <span class="pg-arrow">↗</span>
     </li>
-    <li class="playground-item fade-up" data-delay="0.14">
-      <span class="playground-num">03</span>
-      <span class="playground-name">IDENTITY SKETCH</span>
+    <li class="playground-item fade-up" data-delay="0.12" data-pg-img="">
+      <span class="pg-num">03</span>
+      <span class="pg-name">IDENTITY SKETCH</span>
+      <span class="pg-arrow">↗</span>
     </li>
-    <li class="playground-item fade-up" data-delay="0.21">
-      <span class="playground-num">04</span>
-      <span class="playground-name">COLOUR SYSTEM</span>
+    <li class="playground-item fade-up" data-delay="0.18" data-pg-img="">
+      <span class="pg-num">04</span>
+      <span class="pg-name">COLOUR SYSTEM</span>
+      <span class="pg-arrow">↗</span>
     </li>
-    <li class="playground-item fade-up" data-delay="0.28">
-      <span class="playground-num">05</span>
-      <span class="playground-name">MOTION TEST</span>
+    <li class="playground-item fade-up" data-delay="0.24" data-pg-img="">
+      <span class="pg-num">05</span>
+      <span class="pg-name">MOTION TEST</span>
+      <span class="pg-arrow">↗</span>
     </li>
   </ul>
 
-  <div class="cta-wrap" style="padding-top: 48px;">
+  <div class="cta-wrap fade-up" data-delay="0.3" style="padding-top:56px;">
     <a href="playground.html" class="btn-pill btn-pill-light">See All Work</a>
   </div>
 </section>
@@ -249,7 +248,6 @@
 ═══════════════════════════════════════════ -->
 <footer id="site-footer">
   <div class="footer-upper">
-    <!-- Social -->
     <div>
       <p class="footer-col-label">(Follow)</p>
       <ul class="footer-links">
@@ -260,12 +258,10 @@
       </ul>
     </div>
 
-    <!-- Back to top -->
     <div class="footer-back-top">
       <button class="back-top-btn">Back to Top</button>
     </div>
 
-    <!-- Navigation -->
     <div class="footer-nav-col">
       <p class="footer-col-label">(Navigation)</p>
       <ul class="footer-links" style="text-align:right;">
@@ -277,27 +273,31 @@
     </div>
   </div>
 
-  <!-- LET'S TALK marquee -->
+  <!-- LET'S TALK — title font, slower -->
   <div class="footer-marquee-band">
     <a href="mailto:norhangevara@gmail.com" style="display:block;">
       <div class="footer-marquee-track">
         <span class="footer-marquee-item">LET'S TALK</span>
-        <span class="footer-marquee-item" style="opacity:0.4;">·</span>
+        <span class="footer-marquee-dot">·</span>
         <span class="footer-marquee-item">LET'S TALK</span>
-        <span class="footer-marquee-item" style="opacity:0.4;">·</span>
+        <span class="footer-marquee-dot">·</span>
         <span class="footer-marquee-item">LET'S TALK</span>
-        <span class="footer-marquee-item" style="opacity:0.4;">·</span>
+        <span class="footer-marquee-dot">·</span>
         <span class="footer-marquee-item">LET'S TALK</span>
-        <span class="footer-marquee-item" style="opacity:0.4;">·</span>
+        <span class="footer-marquee-dot">·</span>
+        <span class="footer-marquee-item">LET'S TALK</span>
+        <span class="footer-marquee-dot">·</span>
         <!-- duplicate -->
         <span class="footer-marquee-item">LET'S TALK</span>
-        <span class="footer-marquee-item" style="opacity:0.4;">·</span>
+        <span class="footer-marquee-dot">·</span>
         <span class="footer-marquee-item">LET'S TALK</span>
-        <span class="footer-marquee-item" style="opacity:0.4;">·</span>
+        <span class="footer-marquee-dot">·</span>
         <span class="footer-marquee-item">LET'S TALK</span>
-        <span class="footer-marquee-item" style="opacity:0.4;">·</span>
+        <span class="footer-marquee-dot">·</span>
         <span class="footer-marquee-item">LET'S TALK</span>
-        <span class="footer-marquee-item" style="opacity:0.4;">·</span>
+        <span class="footer-marquee-dot">·</span>
+        <span class="footer-marquee-item">LET'S TALK</span>
+        <span class="footer-marquee-dot">·</span>
       </div>
     </a>
   </div>

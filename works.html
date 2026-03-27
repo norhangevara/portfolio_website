@@ -4,42 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Works — Norhan Gevara</title>
+  <meta name="description" content="Selected branding and design work by Norhan Gevara." />
   <link rel="stylesheet" href="styles.css" />
-  <style>
-    body { overflow: hidden; height: 100vh; }
-    #carousel-page { height: 100vh; }
-
-    /* Three-panel layout for carousel strip items */
-    .carousel-strip-inner {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-      transition: transform 0.5s cubic-bezier(0.22,1,0.36,1);
-    }
-
-    /* Overrides for works page */
-    .carousel-center {
-      overflow: hidden;
-    }
-    .carousel-item {
-      width: 100%;
-      min-height: 160px;
-    }
-  </style>
 </head>
-<body>
+<body class="page-works">
 
-<div id="page-loader">
-  <span id="loader-number">100</span>
-</div>
-
-<!-- HEADER -->
+<!-- ── HEADER ── -->
 <header id="site-header">
   <div class="header-meta">
     <span class="dot"></span>
     <span>Cairo, EG</span>
-    <span data-live-clock>--:-- -- GMT+2</span>
-    <span>30.0444° N, 31.2357° E</span>
+    <span data-live-clock>--:-- --  GMT+2</span>
+    <span class="header-coords">30.0444° N, 31.2357° E</span>
   </div>
   <nav class="header-nav">
     <a href="index.html"      class="nav-link"><span>Home</span><span class="nav-clone">Home</span></a>
@@ -49,97 +25,108 @@
   </nav>
 </header>
 
-<!-- CAROUSEL PAGE -->
+<!-- ══════════════════════════════════════════
+     CAROUSEL PAGE
+═══════════════════════════════════════════ -->
 <div id="carousel-page">
-  <div class="carousel-body">
 
-    <!-- Left -->
-    <div class="carousel-left">
-      <!-- intentionally empty for breathing room -->
+  <div class="carousel-wrapper">
+    <div id="carousel-strip">
+
+      <div class="carousel-item" data-title="PROJECT ONE" data-href="project.html">
+        <div class="carousel-img-wrap">
+          <div class="carousel-placeholder">
+            <span class="c-ph-title">PROJECT 01</span>
+            <span class="c-ph-year">Brand Identity · 2025</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item" data-title="PROJECT TWO" data-href="project.html">
+        <div class="carousel-img-wrap">
+          <div class="carousel-placeholder" style="background:linear-gradient(135deg,rgba(140,115,85,0.9),rgba(56,30,18,0.95))">
+            <span class="c-ph-title">PROJECT 02</span>
+            <span class="c-ph-year">Art Direction · 2025</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item" data-title="PROJECT THREE" data-href="project.html">
+        <div class="carousel-img-wrap">
+          <div class="carousel-placeholder" style="background:linear-gradient(135deg,rgba(176,91,59,0.9),rgba(13,13,13,0.95))">
+            <span class="c-ph-title">PROJECT 03</span>
+            <span class="c-ph-year">Visual Systems · 2025</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item" data-title="PROJECT FOUR" data-href="project.html">
+        <div class="carousel-img-wrap">
+          <div class="carousel-placeholder" style="background:linear-gradient(135deg,rgba(56,30,18,0.9),rgba(100,80,60,0.8))">
+            <span class="c-ph-title">PROJECT 04</span>
+            <span class="c-ph-year">Typography · 2025</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item" data-title="PROJECT FIVE" data-href="project.html">
+        <div class="carousel-img-wrap">
+          <div class="carousel-placeholder" style="background:linear-gradient(135deg,rgba(8,8,8,0.98),rgba(56,30,18,0.7))">
+            <span class="c-ph-title">PROJECT 05</span>
+            <span class="c-ph-year">Strategy · 2026</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item" data-title="PROJECT SIX" data-href="project.html">
+        <div class="carousel-img-wrap">
+          <div class="carousel-placeholder" style="background:linear-gradient(135deg,rgba(100,80,60,0.9),rgba(13,13,13,0.8))">
+            <span class="c-ph-title">PROJECT 06</span>
+            <span class="c-ph-year">Identity · 2024</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item" data-title="PROJECT SEVEN" data-href="project.html">
+        <div class="carousel-img-wrap">
+          <div class="carousel-placeholder" style="background:linear-gradient(135deg,rgba(176,91,59,0.6),rgba(140,115,85,0.9))">
+            <span class="c-ph-title">PROJECT 07</span>
+            <span class="c-ph-year">Packaging · 2024</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item" data-title="PROJECT EIGHT" data-href="project.html">
+        <div class="carousel-img-wrap">
+          <div class="carousel-placeholder" style="background:linear-gradient(135deg,rgba(13,13,13,0.95),rgba(176,91,59,0.5))">
+            <span class="c-ph-title">PROJECT 08</span>
+            <span class="c-ph-year">Campaign · 2024</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /carousel-strip -->
+  </div><!-- /carousel-wrapper -->
+
+  <!-- Bottom UI -->
+  <div class="carousel-ui">
+    <div class="carousel-title-block">
+      <div id="carousel-title">PROJECT ONE</div>
+      <div class="carousel-meta">
+        <span id="carousel-counter">01 / 08</span>
+        &nbsp;·&nbsp;
+        <span id="carousel-timer">00:00:00</span>
+        &nbsp;·&nbsp;
+        <span>PLAYING</span>
+      </div>
     </div>
-
-    <!-- Center Strip -->
-    <div class="carousel-center">
-      <div class="carousel-project-title" id="carousel-title" style="transition: opacity 0.2s ease;">Project 01</div>
-      <div class="carousel-strip" id="carousel-strip">
-
-        <div class="carousel-item active" data-title="Project 01" data-href="project.html">
-          <span class="corner-tr"></span><span class="corner-bl"></span>
-          <div class="carousel-item-placeholder">
-            <span>Brand Identity  ·  2025</span>
-          </div>
-        </div>
-
-        <div class="carousel-item adjacent" data-title="Project 02" data-href="project.html">
-          <span class="corner-tr"></span><span class="corner-bl"></span>
-          <div class="carousel-item-placeholder" style="background:linear-gradient(135deg,rgba(56,30,18,0.5),rgba(100,80,60,0.6))">
-            <span>Art Direction  ·  2025</span>
-          </div>
-        </div>
-
-        <div class="carousel-item adjacent" data-title="Project 03" data-href="project.html">
-          <span class="corner-tr"></span><span class="corner-bl"></span>
-          <div class="carousel-item-placeholder" style="background:linear-gradient(135deg,rgba(140,115,85,0.4),rgba(176,91,59,0.5))">
-            <span>Visual Systems  ·  2025</span>
-          </div>
-        </div>
-
-        <div class="carousel-item hidden" data-title="Project 04" data-href="project.html">
-          <span class="corner-tr"></span><span class="corner-bl"></span>
-          <div class="carousel-item-placeholder" style="background:linear-gradient(135deg,rgba(13,13,13,0.8),rgba(56,30,18,0.8))">
-            <span>Typography  ·  2025</span>
-          </div>
-        </div>
-
-        <div class="carousel-item hidden" data-title="Project 05" data-href="project.html">
-          <span class="corner-tr"></span><span class="corner-bl"></span>
-          <div class="carousel-item-placeholder" style="background:linear-gradient(135deg,rgba(176,91,59,0.4),rgba(200,120,85,0.5))">
-            <span>Brand Strategy  ·  2026</span>
-          </div>
-        </div>
-
-        <div class="carousel-item hidden" data-title="Project 06" data-href="project.html">
-          <span class="corner-tr"></span><span class="corner-bl"></span>
-          <div class="carousel-item-placeholder" style="background:linear-gradient(135deg,rgba(100,80,60,0.5),rgba(140,115,85,0.6))">
-            <span>Packaging  ·  2025</span>
-          </div>
-        </div>
-
-        <div class="carousel-item hidden" data-title="Project 07" data-href="project.html">
-          <span class="corner-tr"></span><span class="corner-bl"></span>
-          <div class="carousel-item-placeholder" style="background:linear-gradient(135deg,rgba(56,30,18,0.6),rgba(176,91,59,0.4))">
-            <span>Campaign Design  ·  2026</span>
-          </div>
-        </div>
-
-        <div class="carousel-item hidden" data-title="Project 08" data-href="project.html">
-          <span class="corner-tr"></span><span class="corner-bl"></span>
-          <div class="carousel-item-placeholder" style="background:linear-gradient(135deg,rgba(13,13,13,0.9),rgba(100,80,60,0.7))">
-            <span>Identity System  ·  2025</span>
-          </div>
-        </div>
-
-      </div><!-- /carousel-strip -->
-
-      <div class="carousel-pagination" id="carousel-pagination"></div>
-      <div class="carousel-counter" id="carousel-counter">1/8</div>
+    <div class="carousel-nav-block">
+      <button class="carousel-btn" id="carousel-prev">← PREV</button>
+      <button class="carousel-btn" id="carousel-next">NEXT →</button>
     </div>
+  </div>
 
-    <!-- Right list -->
-    <div class="carousel-right" id="carousel-right-list"></div>
-
-  </div><!-- /carousel-body -->
-</div>
-
-<!-- Nav buttons -->
-<button class="carousel-nav-prev" id="carousel-prev">PREV</button>
-<button class="carousel-nav-next" id="carousel-next">NEXT</button>
-
-<!-- Status bar -->
-<div class="carousel-status-bar">
-  <span class="carousel-timer" id="carousel-timer">00:00:00</span>
-  <span class="carousel-playing">PLAYING</span>
-</div>
+</div><!-- /carousel-page -->
 
 <script src="main.js"></script>
 </body>
