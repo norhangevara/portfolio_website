@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project 01 — Norhan Gevara</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sable — Norhan Gevara</title>
+  <meta name="description" content="Sable — Brand identity project by Norhan Gevara."/>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body class="page-project">
 
+<!-- HEADER -->
 <header id="site-header">
   <div class="hd-meta">
     <span class="hd-dot"></span>
@@ -23,156 +25,222 @@
   </nav>
 </header>
 
-<!-- ══════════════════════════════════════════
-     PROJECT HEADER
-═══════════════════════════════════════════ -->
-<article id="project-detail">
-  <div class="project-header pt-header">
-    <h1 class="project-title-full">PROJECT TITLE</h1>
-    <div class="project-meta-row">
-      <div class="project-category-group">
-        <span class="project-category-label">Brand Identity</span>
-        <span class="pill pill-dark">Client Work</span>
-      </div>
-      <div style="display:flex; gap:10px; align-items:center;">
-        <span class="project-category-label">Role</span>
-        <span class="pill pill-dark">Strategy</span>
-        <span class="pill pill-dark">Design</span>
-        <span class="pill pill-dark">Direction</span>
+<!-- ═══════════════════════════════════════
+     TITLE + META
+═══════════════════════════════════════ -->
+<div id="proj-title-section">
+  <h1 class="proj-title">SABLE</h1>
+  <div class="proj-rule"></div>
+  <div class="proj-meta-row">
+    <div class="proj-meta-left">
+      <span>Brand Identity</span>
+      <span class="tag tag-dark">Client Work</span>
+    </div>
+    <div class="proj-meta-right">
+      <span>Role</span>
+      <div style="display:flex;gap:6px;">
+        <span class="tag tag-dark">Strategy</span>
+        <span class="tag tag-dark">Design</span>
+        <span class="tag tag-dark">Direction</span>
       </div>
     </div>
   </div>
+</div>
 
-  <!-- ── HERO IMAGE ── -->
-  <div class="project-hero-wrap">
-    <div class="project-hero-placeholder">PROJECT HERO IMAGE</div>
-    <span class="project-sticky-left">(Info)</span>
-    <span class="project-sticky-right">Scroll Down</span>
+<!-- HERO IMAGE -->
+<div class="proj-hero">
+  <div class="proj-hero-ph">
+    <span>ADD HERO IMAGE</span>
   </div>
+</div>
 
-  <!-- ── BODY: SIDEBAR + CONTENT ── -->
-  <div class="project-body">
-    <aside class="project-sidebar">
-      <div class="project-meta-block">
-        <p class="project-meta-key">Medium</p>
-        <p class="project-meta-val">Brand Identity, Print, Digital</p>
-      </div>
-      <div class="project-meta-block">
-        <p class="project-meta-key">Tools</p>
-        <p class="project-meta-val">Adobe Illustrator, Figma, Photoshop</p>
-      </div>
-      <div class="project-meta-block">
-        <p class="project-meta-key">Year</p>
-        <p class="project-meta-val">2025</p>
-      </div>
-      <div class="project-meta-block">
-        <p class="project-meta-key">Duration</p>
-        <p class="project-meta-val">8 weeks</p>
-      </div>
-    </aside>
+<!-- ═══════════════════════════════════════
+     DETAIL TABLE + OVERVIEW TABS
+═══════════════════════════════════════ -->
+<section id="proj-overview">
 
-    <div>
-      <!-- Tabs -->
-      <div class="project-tabs">
-        <button class="project-tab active" data-tab="overview">Overview</button>
-        <button class="project-tab" data-tab="approach">Approach</button>
-        <button class="project-tab" data-tab="outcome">Outcome</button>
-        <button class="project-tab" data-tab="details">Details</button>
-      </div>
-      <div class="project-content" id="project-tab-content">
-        A brand system that holds together across every touchpoint — from strategy through to execution. This project began with a positioning audit and ended with a complete visual language.
-      </div>
-    </div>
-  </div>
-
-  <!-- ── IMAGE GALLERY ── -->
-  <div class="project-gallery">
-    <h2 class="gallery-heading">Design</h2>
-    <p class="gallery-subheading">(Info)  ·  Scroll Down</p>
-
-    <div class="gallery-grid">
-      <div class="gallery-item wide">
-        <span class="gallery-item-num">01 · 05</span>
-        <div class="gallery-item-placeholder">PROJECT IMAGE 01 — WIDE</div>
-      </div>
-
-      <div class="gallery-item">
-        <span class="gallery-item-num">02 · 05</span>
-        <div class="gallery-item-placeholder">PROJECT IMAGE 02</div>
-      </div>
-
-      <div class="gallery-item">
-        <span class="gallery-item-num">03 · 05</span>
-        <div class="gallery-item-placeholder">PROJECT IMAGE 03</div>
-      </div>
-
-      <div class="gallery-item">
-        <span class="gallery-item-num">04 · 05</span>
-        <div class="gallery-item-placeholder" style="background:linear-gradient(135deg,rgba(56,30,18,0.3),rgba(140,115,85,0.4))">PROJECT IMAGE 04</div>
-      </div>
-
-      <div class="gallery-item">
-        <span class="gallery-item-num">05 · 05</span>
-        <div class="gallery-item-placeholder" style="background:linear-gradient(135deg,rgba(13,13,13,0.3),rgba(176,91,59,0.35))">PROJECT IMAGE 05</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ── PROCESS SECTION ── -->
-  <div class="project-gallery" style="background: rgb(var(--cl-primary-dark)); padding: 60px 40px 80px;">
-    <h2 class="gallery-heading" style="color: rgb(var(--cl-text-1));">The Process</h2>
-    <p class="gallery-subheading" style="color: rgba(var(--cl-text-1), 0.4);">Behind the Thinking</p>
-
-    <div class="gallery-grid">
-      <div class="gallery-item" style="background: rgba(var(--cl-text-1), 0.04); border: 1px solid rgba(var(--cl-text-1), 0.06);">
-        <span class="gallery-item-num" style="color: rgba(var(--cl-text-1),0.4);">01/06</span>
-        <div class="gallery-item-placeholder" style="background: transparent; color: rgba(var(--cl-text-1),0.2);">Process Image 01</div>
-      </div>
-      <div class="gallery-item" style="background: rgba(var(--cl-text-1), 0.04); border: 1px solid rgba(var(--cl-text-1), 0.06);">
-        <span class="gallery-item-num" style="color: rgba(var(--cl-text-1),0.4);">02/06</span>
-        <div class="gallery-item-placeholder" style="background: transparent; color: rgba(var(--cl-text-1),0.2);">Process Image 02</div>
-      </div>
-      <div class="gallery-item" style="background: rgba(var(--cl-text-1), 0.04); border: 1px solid rgba(var(--cl-text-1), 0.06);">
-        <span class="gallery-item-num" style="color: rgba(var(--cl-text-1),0.4);">03/06</span>
-        <div class="gallery-item-placeholder" style="background: transparent; color: rgba(var(--cl-text-1),0.2);">Process Image 03</div>
-      </div>
-      <div class="gallery-item" style="background: rgba(var(--cl-text-1), 0.04); border: 1px solid rgba(var(--cl-text-1), 0.06);">
-        <span class="gallery-item-num" style="color: rgba(var(--cl-text-1),0.4);">04/06</span>
-        <div class="gallery-item-placeholder" style="background: transparent; color: rgba(var(--cl-text-1),0.2);">Process Image 04</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ── CREDITS ── -->
-  <div style="background: rgb(var(--cl-primary-dark)); padding: 40px 40px 60px; border-top: 1px solid rgba(var(--cl-text-1),0.07);">
-    <p class="gallery-subheading" style="color: rgba(var(--cl-text-1), 0.35);">(Project Credits)</p>
-    <table style="width:100%; max-width:600px; border-collapse:collapse;">
-      <tr style="border-bottom: 1px solid rgba(var(--cl-text-1),0.07);">
-        <td style="padding:10px 0; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; font-weight:700; color:rgba(var(--cl-text-1),0.3); width:200px;">Brand Designer</td>
-        <td style="padding:10px 0; font-size:13px; font-weight:700; color:rgb(var(--cl-text-1));">Norhan Gevara</td>
+  <!-- Left: Project detail table -->
+  <div>
+    <p class="proj-detail-label">(Project Detail)</p>
+    <table class="proj-table">
+      <tr>
+        <td>Medium</td>
+        <td>Brand Identity, Print, Digital</td>
       </tr>
       <tr>
-        <td style="padding:10px 0; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; font-weight:700; color:rgba(var(--cl-text-1),0.3);">[Other Role]</td>
-        <td style="padding:10px 0; font-size:13px; font-weight:700; color:rgb(var(--cl-text-1));">[Collaborator Name]</td>
+        <td>Tools</td>
+        <td>Adobe Illustrator, Figma, Photoshop</td>
+      </tr>
+      <tr>
+        <td>Year</td>
+        <td>2025</td>
+      </tr>
+      <tr>
+        <td>Duration</td>
+        <td>8 weeks</td>
       </tr>
     </table>
   </div>
 
-  <!-- ── BOTTOM NAVIGATION ── -->
-  <div class="project-nav-bar">
-    <div class="project-nav-next">
-      <span style="font-size:13px; font-family:'Manrope', sans-serif; font-weight:700; opacity:0.4;">SEE NEXT →</span>
-      <a href="project.html" style="font-family:'Bebas Neue',sans-serif; font-size:clamp(22px,3vw,44px); letter-spacing:-0.01em;">Project 02</a>
-      <span style="font-size:12px; font-family:'Manrope',sans-serif; font-weight:700; opacity:0.35; letter-spacing:0.08em;">02/8 PROJECTS</span>
+  <!-- Right: Vertical tab list -->
+  <div>
+    <div class="proj-tab-item active" data-tab="overview">
+      <span class="proj-tab-bullet">●</span>Overview
     </div>
-    <div class="project-nav-links">
-      <a href="index.html">Home</a>
-      <a href="works.html">Back to Works</a>
+    <div class="proj-tab-item" data-tab="challenge">
+      <span class="proj-tab-bullet">●</span>Challenge
+    </div>
+    <div class="proj-tab-item" data-tab="approach">
+      <span class="proj-tab-bullet">●</span>Approach
+    </div>
+    <div class="proj-tab-item" data-tab="outcome">
+      <span class="proj-tab-bullet">●</span>Outcome
+    </div>
+    <div class="proj-tab-item" data-tab="credits">
+      <span class="proj-tab-bullet">●</span>Credits
+    </div>
+
+    <p class="proj-tab-content" id="proj-tab-body">
+      A brand system built from the ground up — not just a mark, but a language. Sable needed to feel precise without feeling cold, and considered without feeling precious. Every decision traces back to a single question: what does this brand feel like when no one's looking?
+    </p>
+  </div>
+
+</section>
+
+<!-- ═══════════════════════════════════════
+     DESIGN SECTION (dark)
+═══════════════════════════════════════ -->
+<section id="proj-design">
+
+  <div class="proj-section-hero">
+    <h2 class="proj-section-title">DESIGN</h2>
+    <div class="proj-section-rule"></div>
+    <div class="proj-section-cap-row">
+      <span class="proj-cap-label">(Info)</span>
+      <p class="proj-cap-text">
+        Rooted in restraint. Every mark, every weight, every space is intentional.
+      </p>
+      <span class="proj-cap-label">Scroll Down</span>
     </div>
   </div>
 
-</article>
+  <!-- Image 01 — wide -->
+  <p class="proj-img-num">01 <span style="opacity:.4">·</span> 05</p>
+  <div class="proj-img-wide">
+    <div class="proj-img-ph wide"><span>ADD PROJECT IMAGE 01</span></div>
+  </div>
 
+  <!-- Images 02 + 03 — 2-col grid -->
+  <p class="proj-img-num">02 <span style="opacity:.4">·</span> 05</p>
+  <div class="proj-img-grid-2">
+    <div class="proj-img-ph"><span>ADD IMAGE 02</span></div>
+    <div class="proj-img-ph"><span>ADD IMAGE 03</span></div>
+  </div>
+
+  <!-- Images 04 + 05 — 2-col grid -->
+  <p class="proj-img-num">04 <span style="opacity:.4">·</span> 05</p>
+  <div class="proj-img-grid-2 proj-img-grid-1">
+    <div class="proj-img-ph"><span>ADD IMAGE 04</span></div>
+    <div class="proj-img-ph"><span>ADD IMAGE 05</span></div>
+  </div>
+
+</section>
+
+<!-- ═══════════════════════════════════════
+     THE PROCESS (cream)
+═══════════════════════════════════════ -->
+<section id="proj-process">
+  <h2 class="proj-process-title">THE PROCESS</h2>
+  <p class="proj-process-sub">Behind the Thinking</p>
+
+  <div class="proj-process-strip">
+    <div>
+      <p class="proj-strip-num">01 <span style="opacity:.4">·</span> 15</p>
+      <div class="proj-strip-ph"><span>Process Image 01</span></div>
+    </div>
+    <div>
+      <p class="proj-strip-num">02 <span style="opacity:.4">·</span> 15</p>
+      <div class="proj-strip-ph"><span>Process Image 02</span></div>
+    </div>
+    <div>
+      <p class="proj-strip-num">03 <span style="opacity:.4">·</span> 15</p>
+      <div class="proj-strip-ph"><span>Process Image 03</span></div>
+    </div>
+    <div>
+      <p class="proj-strip-num">04 <span style="opacity:.4">·</span> 15</p>
+      <div class="proj-strip-ph"><span>Process Image 04</span></div>
+    </div>
+  </div>
+
+  <p class="proj-process-caption">Research · Sketches · Explorations · Refinement</p>
+</section>
+
+<!-- ═══════════════════════════════════════
+     PROJECT CREDITS
+═══════════════════════════════════════ -->
+<section id="proj-credits">
+  <h2 class="proj-credits-head">(Project Credits)</h2>
+
+  <div class="proj-credit-item">
+    <p class="proj-credit-role">Brand Designer</p>
+    <p class="proj-credit-name">Norhan Gevara</p>
+  </div>
+
+  <div class="proj-credit-item">
+    <p class="proj-credit-role">Photography</p>
+    <p class="proj-credit-name">[Photographer Name]</p>
+  </div>
+
+  <div class="proj-credit-item">
+    <p class="proj-credit-role">Copywriting</p>
+    <p class="proj-credit-name">[Copywriter Name]</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     PROJECT FOOTER (dark)
+═══════════════════════════════════════ -->
+<footer id="proj-footer">
+  <div class="proj-footer-meta">
+    <span class="proj-footer-dot"></span>
+    <span>Cairo, EG</span>
+    <span data-live-clock>--:-- --  GMT+2</span>
+    <span>30.0444° N, 31.2357° E</span>
+  </div>
+  <span class="proj-footer-copy">©2026 &nbsp; All Rights Reserved</span>
+</footer>
+
+<script>
+/* ── Project tab navigation ── */
+document.addEventListener('DOMContentLoaded', function() {
+  var tabs    = document.querySelectorAll('.proj-tab-item');
+  var body    = document.getElementById('proj-tab-body');
+  var content = {
+    overview:  'A brand system built from the ground up — not just a mark, but a language. Sable needed to feel precise without feeling cold, and considered without feeling precious. Every decision traces back to a single question: what does this brand feel like when no one\'s looking?',
+    challenge: 'The brief asked for "something minimal" — but minimal can mean empty, or it can mean essential. The challenge was working out which one this brand actually needed. A lot of early directions were discarded for being too clever, too quiet, or too borrowed from references that had no bearing on the story.',
+    approach:  'Everything was built backwards from the retail environment. How does this look on a shelf, on a tag, in a window? The type was chosen for its performance at small sizes as much as large ones. The mark was stress-tested in monochrome before any colour was introduced.',
+    outcome:   'A complete brand identity system: primary and secondary marks, typographic hierarchy, colour palette, grid system, and application across packaging, digital, and environmental touchpoints. Delivered with a full guidelines document and component library in Figma.',
+    credits:   'Brand Designer · Norhan Gevara. Photography to be updated. All assets delivered as editable source files (Figma + Illustrator).'
+  };
+
+  for (var i = 0; i < tabs.length; i++) {
+    (function(tab) {
+      tab.addEventListener('click', function() {
+        for (var j = 0; j < tabs.length; j++) tabs[j].classList.remove('active');
+        tab.classList.add('active');
+        var key = tab.getAttribute('data-tab');
+        body.style.opacity   = '0';
+        body.style.transform = 'translateY(6px)';
+        setTimeout(function() {
+          body.textContent     = content[key] || '';
+          body.style.opacity   = '1';
+          body.style.transform = 'translateY(0)';
+        }, 220);
+      });
+    })(tabs[i]);
+  }
+});
+</script>
 <script src="main.js"></script>
 </body>
 </html>
