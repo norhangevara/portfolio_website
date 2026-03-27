@@ -1,303 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Norhan Gevara — Brand Designer</title>
-  <meta name="description" content="Norhan Gevara — Brand designer and creative director based in Cairo, Egypt. Building brands that hold together." />
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Norhan Gevara — Brand designer based in Cairo, Egypt. Design with intention. Always."/>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
 
-<!-- ── PAGE LOADER ── -->
-<div id="page-loader">
-  <span id="loader-number">100</span>
-</div>
+<!-- LOADER -->
+<div id="page-loader"><span id="loader-num">0</span></div>
 
-<!-- ── HEADER ── -->
+<!-- HEADER -->
 <header id="site-header">
-  <div class="header-meta">
-    <span class="dot"></span>
+  <div class="hd-meta">
+    <span class="hd-dot"></span>
     <span>Cairo, EG</span>
-    <span data-live-clock>--:-- --  GMT+2</span>
-    <span class="header-coords">30.0444° N, 31.2357° E</span>
+    <span data-clock>--:-- --  GMT+2</span>
+    <span class="hd-coords">30.0444° N, 31.2357° E</span>
   </div>
-  <nav class="header-nav">
-    <a href="index.html"      class="nav-link active"><span>Home</span><span class="nav-clone">Home</span></a>
-    <a href="works.html"      class="nav-link"><span>Works</span><span class="nav-clone">Works</span></a>
-    <a href="playground.html" class="nav-link"><span>Playground</span><span class="nav-clone">Playground</span></a>
-    <a href="about.html"      class="nav-link"><span>About</span><span class="nav-clone">About</span></a>
+  <nav class="hd-nav">
+    <a href="index.html"      class="nav-link is-active"><span>Home</span><span class="nl-clone">Home</span></a>
+    <a href="works.html"      class="nav-link"><span>Works</span><span class="nl-clone">Works</span></a>
+    <a href="playground.html" class="nav-link"><span>Playground</span><span class="nl-clone">Playground</span></a>
+    <a href="about.html"      class="nav-link"><span>About</span><span class="nl-clone">About</span></a>
   </nav>
 </header>
 
-<!-- ══════════════════════════════════════════
-     HERO — scroll-pinned expand
-═══════════════════════════════════════════ -->
-<div id="hero-scroll-container">
-
-  <!-- Sticky hero stage -->
+<!-- ═══════════════════════════════════════
+     HERO — sticky scroll zone
+═══════════════════════════════════════ -->
+<div id="hero-outer">
   <section id="hero">
 
-    <!-- Name: letter-mask hover — visible before/during scroll -->
-    <div class="hero-name-wrap" id="hero-name-wrap">
-      <h1 class="hero-name" id="hero-name">
-        <!-- Letters injected by JS -->
-      </h1>
+    <!-- Full-width name with letter-mask hover -->
+    <div class="hero-name-row">
+      <h1 class="hero-name" id="hero-name"><!-- built by JS --></h1>
     </div>
 
-    <!-- Middle row: A BRAND · video card · DESIGNER -->
-    <div class="hero-middle-row" id="hero-middle-row">
-      <span class="hero-side hero-side-left" id="hero-side-left">A BRAND</span>
+    <!-- Stage: LEFT text · card · RIGHT text -->
+    <div class="hero-stage">
+      <span class="hero-side hero-side-l" id="hero-left">BRAND</span>
 
-      <div class="hero-video-card" id="hero-video-card">
-        <div class="hero-video-inner">
-          <!-- Replace src with your actual showreel video -->
-          <div class="hero-video-placeholder">
-            <span class="hvp-label">SHOWREEL</span>
-            <span class="hvp-sub">Add your video here</span>
-          </div>
-          <!-- <video autoplay muted loop playsinline src="showreel.mp4"></video> -->
+      <div class="hero-card" id="hero-card">
+        <!-- Replace with: <video autoplay muted loop playsinline src="showreel.mp4"></video> -->
+        <div class="hero-card-ph">
+          <span class="hero-card-ph-label">SHOWREEL</span>
+          <span class="hero-card-ph-sub">Add your video here</span>
         </div>
       </div>
 
-      <span class="hero-side hero-side-right" id="hero-side-right">DESIGNER</span>
+      <span class="hero-side hero-side-r" id="hero-right">DESIGNER</span>
+
+      <span class="hero-meta-label">Brand Designer &nbsp;·&nbsp; Cairo, EG &nbsp;·&nbsp; 2026</span>
     </div>
 
     <!-- Scroll cue -->
     <div class="scroll-cue" id="scroll-cue">
-      <span class="scroll-cue-text">SCROLL</span>
+      <span class="scroll-cue-txt">Scroll Down</span>
       <span class="scroll-cue-line"></span>
     </div>
 
   </section>
-</div><!-- /hero-scroll-container -->
+</div>
 
-<!-- ══════════════════════════════════════════
-     FULL-SCREEN VIDEO / SHOWREEL SECTION
-═══════════════════════════════════════════ -->
-<section id="full-video-section">
-  <div class="full-video-inner">
-    <div class="full-video-placeholder">
-      <span class="fvp-label">SHOWREEL</span>
-    </div>
-    <!-- <video autoplay muted loop playsinline src="showreel-full.mp4"></video> -->
-  </div>
+<!-- ═══════════════════════════════════════
+     MANIFESTO (dark brown)
+═══════════════════════════════════════ -->
+<section id="manifesto">
+  <p class="manifesto-eyebrow reveal">Purposeful Design</p>
+  <h2 class="manifesto-title reveal">DESIGN<br>WITH<br>INTENTION.</h2>
+  <p class="manifesto-sub reveal">Narrative through craft. Every decision serves a purpose.</p>
 </section>
 
-<!-- ══════════════════════════════════════════
+<!-- ═══════════════════════════════════════
      FEATURED WORKS
-═══════════════════════════════════════════ -->
+═══════════════════════════════════════ -->
 <section id="featured-works">
 
-  <!-- Letter-by-letter title -->
-  <div class="letter-title-wrap" data-letters="FEATURED WORKS">
-    <h2 class="letter-title" id="featured-title">
-      <!-- Letters injected by JS -->
-    </h2>
-  </div>
-
-  <div class="section-meta-row fade-up" data-delay="0.1">
-    <span class="section-label">Selected Projects</span>
-    <div class="section-tags">
-      <span class="pill pill-dark">Strategic</span>
-      <span class="pill pill-dark">Crafted</span>
-      <span class="pill pill-dark">Precise</span>
+  <div class="fw-header">
+    <span class="fw-label">Design Insights</span>
+    <div class="fw-pills">
+      <span class="tag tag-dark">Strategic</span>
+      <span class="tag tag-dark">Crafted</span>
+      <span class="tag tag-dark">Precise</span>
     </div>
   </div>
 
   <div class="works-grid">
-    <!-- Wide card -->
-    <a href="project.html" class="card card-wide fade-up" data-delay="0.05">
-      <div class="card-img-wrap">
-        <div class="card-placeholder">
-          <span class="card-placeholder-text">PROJECT 01</span>
+
+    <!-- Card 1 — Sable -->
+    <a href="project.html" class="w-card reveal">
+      <div class="w-card-img">
+        <div class="w-card-ph" style="background:linear-gradient(135deg,#1a1007 0%,#3b1a06 100%)">
+          <span class="w-card-ph-lbl">Sable</span>
         </div>
       </div>
-      <div class="card-info">
-        <div class="card-left">
-          <div class="card-num">01</div>
-          <div class="card-title">Project 01</div>
+      <div class="w-card-bar">
+        <div class="w-card-bar-left">
+          <span class="w-card-num">01</span>
+          <span class="w-card-title">Sable</span>
         </div>
-        <div class="card-tags">
-          <span class="pill pill-light">Brand Identity</span>
-          <span class="pill pill-light">Strategy</span>
+        <div class="w-card-tags">
+          <span class="tag tag-outline">Brand Identity</span>
         </div>
       </div>
     </a>
 
-    <!-- Grid row: 2 cards -->
-    <a href="project.html" class="card fade-up" data-delay="0.1">
-      <div class="card-img-wrap">
-        <div class="card-placeholder" style="background:linear-gradient(135deg,rgba(56,30,18,0.7),rgba(100,80,60,0.8))">
-          <span class="card-placeholder-text">PROJECT 02</span>
+    <!-- Card 2 — Kosharico -->
+    <a href="project.html" class="w-card reveal" data-delay=".05">
+      <div class="w-card-img">
+        <div class="w-card-ph" style="background:linear-gradient(135deg,#2a1a0a 0%,#7a4520 100%)">
+          <span class="w-card-ph-lbl">Kosharico</span>
         </div>
       </div>
-      <div class="card-info">
-        <div class="card-left">
-          <div class="card-num">02</div>
-          <div class="card-title">Project 02</div>
+      <div class="w-card-bar">
+        <div class="w-card-bar-left">
+          <span class="w-card-num">02</span>
+          <span class="w-card-title">Kosharico</span>
         </div>
-        <div class="card-tags">
-          <span class="pill pill-light">Art Direction</span>
-        </div>
-      </div>
-    </a>
-
-    <a href="project.html" class="card fade-up" data-delay="0.15">
-      <div class="card-img-wrap">
-        <div class="card-placeholder" style="background:linear-gradient(135deg,rgba(140,115,85,0.5),rgba(176,91,59,0.6))">
-          <span class="card-placeholder-text">PROJECT 03</span>
-        </div>
-      </div>
-      <div class="card-info">
-        <div class="card-left">
-          <div class="card-num">03</div>
-          <div class="card-title">Project 03</div>
-        </div>
-        <div class="card-tags">
-          <span class="pill pill-light">Visual Systems</span>
+        <div class="w-card-tags">
+          <span class="tag tag-outline">Art Direction</span>
         </div>
       </div>
     </a>
 
-    <!-- Second wide card -->
-    <a href="project.html" class="card card-wide fade-up" data-delay="0.2">
-      <div class="card-img-wrap">
-        <div class="card-placeholder" style="background:linear-gradient(135deg,rgba(13,13,13,0.9),rgba(56,30,18,0.9))">
-          <span class="card-placeholder-text">PROJECT 04</span>
+    <!-- Card 3 — Commonalities -->
+    <a href="project.html" class="w-card reveal" data-delay=".1">
+      <div class="w-card-img">
+        <div class="w-card-ph" style="background:linear-gradient(135deg,#0d0c07 0%,#2d2416 100%)">
+          <span class="w-card-ph-lbl">Commonalities</span>
         </div>
       </div>
-      <div class="card-info">
-        <div class="card-left">
-          <div class="card-num">04</div>
-          <div class="card-title">Project 04</div>
+      <div class="w-card-bar">
+        <div class="w-card-bar-left">
+          <span class="w-card-num">03</span>
+          <span class="w-card-title">Commonalities</span>
         </div>
-        <div class="card-tags">
-          <span class="pill pill-light">Typography</span>
-          <span class="pill pill-light">Concept</span>
+        <div class="w-card-tags">
+          <span class="tag tag-outline">Visual Systems</span>
         </div>
       </div>
     </a>
+
+    <!-- Card 4 — Koa -->
+    <a href="project.html" class="w-card reveal" data-delay=".15">
+      <div class="w-card-img">
+        <div class="w-card-ph" style="background:linear-gradient(135deg,#1e1408 0%,#5a3a1a 100%)">
+          <span class="w-card-ph-lbl">Koa</span>
+        </div>
+      </div>
+      <div class="w-card-bar">
+        <div class="w-card-bar-left">
+          <span class="w-card-num">04</span>
+          <span class="w-card-title">Koa</span>
+        </div>
+        <div class="w-card-tags">
+          <span class="tag tag-outline">Strategy</span>
+        </div>
+      </div>
+    </a>
+
   </div>
 
-  <div class="cta-wrap fade-up" data-delay="0.25">
-    <a href="works.html" class="btn-pill">See All Work</a>
+  <div class="cta-row reveal">
+    <a href="works.html" class="pill-btn">See All Work</a>
   </div>
+
 </section>
 
-<!-- ══════════════════════════════════════════
-     PLAYGROUND SECTION (dark)
-═══════════════════════════════════════════ -->
-<section id="playground-preview">
+<!-- ═══════════════════════════════════════
+     PLAYGROUND PREVIEW (black)
+═══════════════════════════════════════ -->
+<section id="pg-preview">
 
-  <!-- Letter-by-letter title -->
-  <div class="letter-title-wrap letter-title-light" data-letters="PLAYGROUND">
-    <h2 class="letter-title" id="playground-title">
-      <!-- Letters injected by JS -->
-    </h2>
+  <div class="pg-header reveal">
+    <h2 class="pg-section-title">Playground</h2>
+    <span class="pg-desc">Self-initiated work</span>
   </div>
 
-  <div class="playground-meta-row fade-up" data-delay="0.05">
-    <span class="section-label" style="color:rgba(240,237,228,0.5);">Self-Initiated Work</span>
-    <span class="pill pill-light">Experiments &amp; Sketches</span>
-  </div>
-
-  <!-- Mouse-follow image (hidden until hover) -->
-  <div class="pg-hover-image" id="pg-hover-image">
+  <!-- Mouse-follow hover image -->
+  <div id="pg-hover-img">
     <div class="pg-hover-img-inner">
-      <!-- Replace src with actual images per item -->
-      <div class="pg-img-placeholder" id="pg-img-placeholder">IMG</div>
+      <span class="pg-hph" id="pg-hph-num">01</span>
     </div>
   </div>
 
-  <ul class="playground-list" id="playground-list">
-    <li class="playground-item fade-up" data-delay="0" data-pg-img="">
-      <span class="pg-num">01</span>
-      <span class="pg-name">TYPE STUDY 01</span>
-      <span class="pg-arrow">↗</span>
+  <ul class="pg-list" id="pg-list">
+    <li class="pg-item reveal" data-delay="0">
+      <span class="pg-item-num">01</span>
+      <span class="pg-item-name">Type Study 01</span>
+      <span class="pg-item-arr">↗</span>
     </li>
-    <li class="playground-item fade-up" data-delay="0.06" data-pg-img="">
-      <span class="pg-num">02</span>
-      <span class="pg-name">GRID EXPERIMENT</span>
-      <span class="pg-arrow">↗</span>
+    <li class="pg-item reveal" data-delay=".06">
+      <span class="pg-item-num">02</span>
+      <span class="pg-item-name">Grid Experiment</span>
+      <span class="pg-item-arr">↗</span>
     </li>
-    <li class="playground-item fade-up" data-delay="0.12" data-pg-img="">
-      <span class="pg-num">03</span>
-      <span class="pg-name">IDENTITY SKETCH</span>
-      <span class="pg-arrow">↗</span>
+    <li class="pg-item reveal" data-delay=".12">
+      <span class="pg-item-num">03</span>
+      <span class="pg-item-name">Identity Sketch</span>
+      <span class="pg-item-arr">↗</span>
     </li>
-    <li class="playground-item fade-up" data-delay="0.18" data-pg-img="">
-      <span class="pg-num">04</span>
-      <span class="pg-name">COLOUR SYSTEM</span>
-      <span class="pg-arrow">↗</span>
+    <li class="pg-item reveal" data-delay=".18">
+      <span class="pg-item-num">04</span>
+      <span class="pg-item-name">Colour System</span>
+      <span class="pg-item-arr">↗</span>
     </li>
-    <li class="playground-item fade-up" data-delay="0.24" data-pg-img="">
-      <span class="pg-num">05</span>
-      <span class="pg-name">MOTION TEST</span>
-      <span class="pg-arrow">↗</span>
+    <li class="pg-item reveal" data-delay=".24">
+      <span class="pg-item-num">05</span>
+      <span class="pg-item-name">Motion Test</span>
+      <span class="pg-item-arr">↗</span>
     </li>
   </ul>
 
-  <div class="cta-wrap fade-up" data-delay="0.3" style="padding-top:56px;">
-    <a href="playground.html" class="btn-pill btn-pill-light">See All Work</a>
+  <div class="cta-row reveal" style="padding-top:60px;">
+    <a href="playground.html" class="pill-btn light">See All Work</a>
   </div>
+
 </section>
 
-<!-- ══════════════════════════════════════════
+<!-- ═══════════════════════════════════════
      FOOTER
-═══════════════════════════════════════════ -->
-<footer id="site-footer">
-  <div class="footer-upper">
+═══════════════════════════════════════ -->
+<footer id="footer">
+  <div class="footer-top">
+
     <div>
       <p class="footer-col-label">(Follow)</p>
+      <div class="footer-rule"></div>
       <ul class="footer-links">
-        <li><a href="https://www.instagram.com/the_g_playground/" class="footer-link" target="_blank" rel="noopener"><span>Instagram</span><span class="footer-clone">Instagram</span></a></li>
-        <li><a href="https://www.linkedin.com/in/norhan-gevara-06137a178/" class="footer-link" target="_blank" rel="noopener"><span>LinkedIn</span><span class="footer-clone">LinkedIn</span></a></li>
-        <li><a href="https://www.behance.net/norhangevara" class="footer-link" target="_blank" rel="noopener"><span>Behance</span><span class="footer-clone">Behance</span></a></li>
-        <li><a href="mailto:norhangevara@gmail.com" class="footer-link"><span>Email</span><span class="footer-clone">Email</span></a></li>
+        <li><a href="https://www.instagram.com/the_g_playground/" target="_blank" rel="noopener" class="f-link"><span>Instagram</span><span class="f-clone">Instagram</span></a></li>
+        <li><a href="https://www.linkedin.com/in/norhan-gevara-06137a178/" target="_blank" rel="noopener" class="f-link"><span>LinkedIn</span><span class="f-clone">LinkedIn</span></a></li>
+        <li><a href="https://www.behance.net/norhangevara" target="_blank" rel="noopener" class="f-link"><span>Behance</span><span class="f-clone">Behance</span></a></li>
+        <li><a href="mailto:norhangevara@gmail.com" class="f-link"><span>Email</span><span class="f-clone">Email</span></a></li>
       </ul>
     </div>
 
-    <div class="footer-back-top">
-      <button class="back-top-btn">Back to Top</button>
+    <div class="footer-center">
+      <button class="back-top" id="back-top">Back to Top</button>
     </div>
 
-    <div class="footer-nav-col">
+    <div class="footer-right">
       <p class="footer-col-label">(Navigation)</p>
-      <ul class="footer-links" style="text-align:right;">
-        <li><a href="index.html"       class="footer-link" style="display:inline-flex;"><span>Home</span><span class="footer-clone">Home</span></a></li>
-        <li><a href="works.html"       class="footer-link" style="display:inline-flex;"><span>Works</span><span class="footer-clone">Works</span></a></li>
-        <li><a href="playground.html"  class="footer-link" style="display:inline-flex;"><span>Playground</span><span class="footer-clone">Playground</span></a></li>
-        <li><a href="about.html"       class="footer-link" style="display:inline-flex;"><span>About</span><span class="footer-clone">About</span></a></li>
+      <div class="footer-rule"></div>
+      <ul class="footer-links">
+        <li><a href="index.html"      class="f-link"><span>Home</span><span class="f-clone">Home</span></a></li>
+        <li><a href="works.html"      class="f-link"><span>Works</span><span class="f-clone">Works</span></a></li>
+        <li><a href="playground.html" class="f-link"><span>Playground</span><span class="f-clone">Playground</span></a></li>
+        <li><a href="about.html"      class="f-link"><span>About</span><span class="f-clone">About</span></a></li>
       </ul>
     </div>
+
   </div>
 
-  <!-- LET'S TALK — title font, slower -->
-  <div class="footer-marquee-band">
-    <a href="mailto:norhangevara@gmail.com" style="display:block;">
+  <!-- Marquee -->
+  <div class="footer-marquee">
+    <a href="mailto:norhangevara@gmail.com" style="display:block">
       <div class="footer-marquee-track">
-        <span class="footer-marquee-item">LET'S TALK</span>
-        <span class="footer-marquee-dot">·</span>
-        <span class="footer-marquee-item">LET'S TALK</span>
-        <span class="footer-marquee-dot">·</span>
-        <span class="footer-marquee-item">LET'S TALK</span>
-        <span class="footer-marquee-dot">·</span>
-        <span class="footer-marquee-item">LET'S TALK</span>
-        <span class="footer-marquee-dot">·</span>
-        <span class="footer-marquee-item">LET'S TALK</span>
-        <span class="footer-marquee-dot">·</span>
-        <!-- duplicate -->
-        <span class="footer-marquee-item">LET'S TALK</span>
-        <span class="footer-marquee-dot">·</span>
-        <span class="footer-marquee-item">LET'S TALK</span>
-        <span class="footer-marquee-dot">·</span>
-        <span class="footer-marquee-item">LET'S TALK</span>
-        <span class="footer-marquee-dot">·</span>
-        <span class="footer-marquee-item">LET'S TALK</span>
-        <span class="footer-marquee-dot">·</span>
-        <span class="footer-marquee-item">LET'S TALK</span>
-        <span class="footer-marquee-dot">·</span>
+        <span class="footer-marquee-word">Let's Talk</span><span class="footer-marquee-dot">·</span>
+        <span class="footer-marquee-word">Let's Talk</span><span class="footer-marquee-dot">·</span>
+        <span class="footer-marquee-word">Let's Talk</span><span class="footer-marquee-dot">·</span>
+        <span class="footer-marquee-word">Let's Talk</span><span class="footer-marquee-dot">·</span>
+        <span class="footer-marquee-word">Let's Talk</span><span class="footer-marquee-dot">·</span>
+        <span class="footer-marquee-word">Let's Talk</span><span class="footer-marquee-dot">·</span>
+        <span class="footer-marquee-word">Let's Talk</span><span class="footer-marquee-dot">·</span>
+        <span class="footer-marquee-word">Let's Talk</span><span class="footer-marquee-dot">·</span>
       </div>
     </a>
   </div>
@@ -305,10 +274,10 @@
   <div class="footer-bottom">
     <div class="footer-bottom-meta">
       <span>● Cairo, EG</span>
-      <span data-live-clock>--:-- -- GMT+2</span>
+      <span data-clock>--:-- --  GMT+2</span>
       <span>30.0444° N, 31.2357° E</span>
     </div>
-    <span class="footer-col-label">©2026  All Rights Reserved</span>
+    <span>©2026 &nbsp; All Rights Reserved</span>
   </div>
 </footer>
 

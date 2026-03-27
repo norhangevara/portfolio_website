@@ -1,114 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Playground — Norhan Gevara</title>
-  <meta name="description" content="Self-initiated experiments and explorations by Norhan Gevara." />
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Self-initiated experiments and explorations by Norhan Gevara."/>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body class="page-playground">
 
-<!-- ── HEADER ── -->
+<!-- HEADER -->
 <header id="site-header">
-  <div class="header-meta">
-    <span class="dot"></span>
+  <div class="hd-meta">
+    <span class="hd-dot"></span>
     <span>Cairo, EG</span>
     <span data-live-clock>--:-- --  GMT+2</span>
-    <span class="header-coords">30.0444° N, 31.2357° E</span>
+    <span class="hd-coords">30.0444° N, 31.2357° E</span>
   </div>
-  <nav class="header-nav">
-    <a href="index.html"      class="nav-link"><span>Home</span><span class="nav-clone">Home</span></a>
-    <a href="works.html"      class="nav-link"><span>Works</span><span class="nav-clone">Works</span></a>
-    <a href="playground.html" class="nav-link active"><span>Playground</span><span class="nav-clone">Playground</span></a>
-    <a href="about.html"      class="nav-link"><span>About</span><span class="nav-clone">About</span></a>
+  <nav class="hd-nav">
+    <a href="index.html"      class="nav-link"><span>Home</span><span class="nl-clone">Home</span></a>
+    <a href="works.html"      class="nav-link"><span>Works</span><span class="nl-clone">Works</span></a>
+    <a href="playground.html" class="nav-link is-active"><span>Playground</span><span class="nl-clone">Playground</span></a>
+    <a href="about.html"      class="nav-link"><span>About</span><span class="nl-clone">About</span></a>
   </nav>
 </header>
 
-<!-- ══════════════════════════════════════════
-     CAROUSEL PAGE
-═══════════════════════════════════════════ -->
-<div id="carousel-page">
+<!-- PLAYGROUND SCENE — 3-col grid -->
+<div id="pg-scene">
 
-  <div class="carousel-wrapper">
-    <div id="carousel-strip">
-
-      <div class="carousel-item" data-title="TYPE STUDY 01">
-        <div class="carousel-img-wrap">
-          <div class="carousel-placeholder">
-            <span class="c-ph-title">TYPE 01</span>
-            <span class="c-ph-year">Typography · 2025</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="carousel-item" data-title="GRID EXPERIMENT">
-        <div class="carousel-img-wrap">
-          <div class="carousel-placeholder" style="background:linear-gradient(135deg,rgba(176,91,59,0.8),rgba(56,30,18,0.9))">
-            <span class="c-ph-title">GRID</span>
-            <span class="c-ph-year">Layout · 2025</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="carousel-item" data-title="IDENTITY SKETCH">
-        <div class="carousel-img-wrap">
-          <div class="carousel-placeholder" style="background:linear-gradient(135deg,rgba(140,115,85,0.7),rgba(13,13,13,0.9))">
-            <span class="c-ph-title">IDENTITY</span>
-            <span class="c-ph-year">Sketch · 2025</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="carousel-item" data-title="COLOUR SYSTEM">
-        <div class="carousel-img-wrap">
-          <div class="carousel-placeholder" style="background:linear-gradient(135deg,rgba(100,80,60,0.9),rgba(176,91,59,0.6))">
-            <span class="c-ph-title">COLOUR</span>
-            <span class="c-ph-year">System · 2024</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="carousel-item" data-title="MOTION TEST">
-        <div class="carousel-img-wrap">
-          <div class="carousel-placeholder" style="background:linear-gradient(135deg,rgba(8,8,8,0.95),rgba(56,30,18,0.8))">
-            <span class="c-ph-title">MOTION</span>
-            <span class="c-ph-year">Test · 2024</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="carousel-item" data-title="CONCEPT 01">
-        <div class="carousel-img-wrap">
-          <div class="carousel-placeholder" style="background:linear-gradient(135deg,rgba(56,30,18,0.6),rgba(140,115,85,0.85))">
-            <span class="c-ph-title">CONCEPT</span>
-            <span class="c-ph-year">Exploration · 2024</span>
-          </div>
-        </div>
-      </div>
-
-    </div><!-- /carousel-strip -->
-  </div><!-- /carousel-wrapper -->
-
-  <!-- Bottom UI -->
-  <div class="carousel-ui">
-    <div class="carousel-title-block">
-      <div id="carousel-title">TYPE STUDY 01</div>
-      <div class="carousel-meta">
-        <span id="carousel-counter">01 / 06</span>
-        &nbsp;·&nbsp;
-        <span id="carousel-timer">00:00:00</span>
-        &nbsp;·&nbsp;
-        <span>PLAYING</span>
-      </div>
-    </div>
-    <div class="carousel-nav-block">
-      <button class="carousel-btn" id="carousel-prev">← PREV</button>
-      <button class="carousel-btn" id="carousel-next">NEXT →</button>
-    </div>
+  <!-- LEFT: Large vertical title -->
+  <div class="pg-side-title-col">
+    <span class="pg-side-title">PLAYGROUND</span>
   </div>
 
-</div><!-- /carousel-page -->
+  <!-- CENTER: Card strip + nav -->
+  <div class="pg-center-col">
+
+    <button class="cs-prev" style="position:absolute;left:16px;top:50%;transform:translateY(-50%);z-index:10;">← PREV</button>
+    <button class="cs-next" style="position:absolute;right:16px;top:50%;transform:translateY(-50%);z-index:10;">NEXT →</button>
+
+    <div class="cs-strip" style="width:100%;height:100%;">
+
+      <div class="cs-card" data-title="TYPE STUDY 01">
+        <div class="cs-img">
+          <div class="cs-ph">
+            <span class="cs-ph-title">TYPE 01</span>
+            <span class="cs-ph-sub">Typography · 2025</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cs-card" data-title="GRID EXPERIMENT">
+        <div class="cs-img">
+          <div class="cs-ph" style="background:linear-gradient(135deg,rgba(176,91,59,.8),rgba(56,30,18,.9))">
+            <span class="cs-ph-title">GRID</span>
+            <span class="cs-ph-sub">Layout · 2025</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cs-card" data-title="IDENTITY SKETCH">
+        <div class="cs-img">
+          <div class="cs-ph" style="background:linear-gradient(135deg,rgba(140,115,85,.7),rgba(13,13,13,.9))">
+            <span class="cs-ph-title">IDENTITY</span>
+            <span class="cs-ph-sub">Sketch · 2025</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cs-card" data-title="COLOUR SYSTEM">
+        <div class="cs-img">
+          <div class="cs-ph" style="background:linear-gradient(135deg,rgba(100,80,60,.9),rgba(176,91,59,.6))">
+            <span class="cs-ph-title">COLOUR</span>
+            <span class="cs-ph-sub">System · 2024</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cs-card" data-title="MOTION TEST">
+        <div class="cs-img">
+          <div class="cs-ph" style="background:linear-gradient(135deg,rgba(8,8,8,.95),rgba(56,30,18,.8))">
+            <span class="cs-ph-title">MOTION</span>
+            <span class="cs-ph-sub">Test · 2024</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cs-card" data-title="CONCEPT 01">
+        <div class="cs-img">
+          <div class="cs-ph" style="background:linear-gradient(135deg,rgba(56,30,18,.6),rgba(140,115,85,.85))">
+            <span class="cs-ph-title">CONCEPT</span>
+            <span class="cs-ph-sub">Exploration · 2024</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /cs-strip -->
+
+    <!-- Pagination below card -->
+    <div class="pg-pagination">
+      <span class="cs-page-num active">01</span>
+      <span class="cs-page-num">02</span>
+      <span class="cs-page-num">03</span>
+      <span class="cs-page-num">04</span>
+      <span class="cs-page-num">05</span>
+      <span class="cs-page-num">06</span>
+    </div>
+
+  </div><!-- /pg-center-col -->
+
+  <!-- RIGHT: Project name list -->
+  <div class="pg-right-col">
+    <ul id="pg-name-list">
+      <li class="pg-name-item active">Type Study 01</li>
+      <li class="pg-name-item">Grid Experiment</li>
+      <li class="pg-name-item">Identity Sketch</li>
+      <li class="pg-name-item">Colour System</li>
+      <li class="pg-name-item">Motion Test</li>
+      <li class="pg-name-item">Concept 01</li>
+    </ul>
+  </div>
+
+</div><!-- /pg-scene -->
 
 <script src="main.js"></script>
 </body>
